@@ -1,2 +1,3 @@
-# ProyectoETS
+# PharmaGuarda
+
 Álvaro Hernández Rocío
