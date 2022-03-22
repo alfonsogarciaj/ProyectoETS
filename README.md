@@ -2,9 +2,8 @@
 
 PharmaGuardia es un proyecto donde se busca facilitar al usuario la busquedad de farmacias de guardia. También el usuario podrá añadir una farmacia de confianza donde tendrá contacto directo con esta. 
 
-#### Wiki del Proyecto
 
- [Wiki](https://github.com/alfonsogj14/ProyectoETS/wiki) 
+ [Wiki del Proyecto](https://github.com/alfonsogj14/ProyectoETS/wiki) 
   
 #### Los colaboradores de este proyecto son:
   
