@@ -14,6 +14,6 @@ PharmaGuardia es un proyecto donde se busca facilitar al usuario la busquedad de
   
 *Ricardo Adrian*
 
-  
+<p align="center">
 <img src="https://user-images.githubusercontent.com/91060831/158381637-5fe7baf5-9582-47b7-8fd0-744d395cdb67.jpg" width="450"/>
-
+</p>
