@@ -1,3 +1,5 @@
+<div align="justify">
+
 # PharmaGuardia <img src="https://user-images.githubusercontent.com/91060831/158379573-7c7fe284-87a3-40a3-b8eb-30874de5c57e.png" width="150"/>
 
 PharmaGuardia es un proyecto donde se busca facilitar al usuario la busquedad de farmacias de guardia. También el usuario podrá añadir una farmacia de confianza donde tendrá contacto directo con esta. 
@@ -19,3 +21,5 @@ PharmaGuardia es un proyecto donde se busca facilitar al usuario la busquedad de
  
 <img src="https://user-images.githubusercontent.com/91060831/160161423-e0587fd9-dc44-448f-b2d9-fded45b123b0.png" width="450"/>
 </p>
+
+ </div>
