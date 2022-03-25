@@ -14,5 +14,8 @@ PharmaGuardia es un proyecto donde se busca facilitar al usuario la busquedad de
 *Ricardo Adrian Medina Gómez*
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/91060831/158381637-5fe7baf5-9582-47b7-8fd0-744d395cdb67.jpg" width="450"/>
+ 
+
+ 
+<img src="https://user-images.githubusercontent.com/91060831/160161423-e0587fd9-dc44-448f-b2d9-fded45b123b0.png" width="450"/>
 </p>
