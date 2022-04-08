@@ -6,7 +6,7 @@
   
 [Wiki del Proyecto](https://github.com/alfonsogj14/ProyectoETS/wiki) 
         
-#### Los colaboradores de este proyecto son:
+#### Los colaboradores son:
   
 *Álvaro Hernández Rocío*
   
