@@ -7,7 +7,7 @@
 </td>
 <td>
 
-#### Integrantes:
+#### Integrantes del proyecto:
   
 [Álvaro Hernández Rocío](https://github.com/alvarohdr)
 
