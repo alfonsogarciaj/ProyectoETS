@@ -2,7 +2,7 @@ package es.iespuerto.pharmaguardia;
 
 public class Farmacia {
     private String nombre;
-    private String telefono;
+    private int telefono;
     private Direccion direccion;
     private boolean guardia;
 
@@ -19,7 +19,7 @@ public class Farmacia {
      * @param direccion de la farmacia
      * @param guardia true si la farmacia está de guardia y false si no
      */
-    public Farmacia(String nombre, String telefono, Direccion direccion, boolean guardia) {
+    public Farmacia(String nombre, int telefono, Direccion direccion, boolean guardia) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.direccion = direccion;
@@ -34,11 +34,11 @@ public class Farmacia {
         this.nombre = nombre;
     }
 
-    public String getTelefono() {
+    public int getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(String telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
 

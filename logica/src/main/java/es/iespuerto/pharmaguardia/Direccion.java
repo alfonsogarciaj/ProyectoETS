@@ -2,10 +2,10 @@ package es.iespuerto.pharmaguardia;
 
 public class Direccion {
 
-    private String codigoPostal;
+    private int codigoPostal;
     private String calle;
-    private String numero;
-    private String piso;
+    private int numero;
+    private int piso;
     private Provincia provincia;
     private Isla isla;
 
@@ -26,8 +26,8 @@ public class Direccion {
      * @param provincia de la clase
      * @param isla de la clase
      */
-    public Direccion(String codigoPostal, String calle, String numero, Provincia provincia, Isla isla){
-        this(codigoPostal, calle, numero, null, provincia, isla);
+    public Direccion(int codigoPostal, String calle, int numero, Provincia provincia, Isla isla){
+        this(codigoPostal, calle, numero, 0, provincia, isla);
     }
 
     /**
@@ -39,7 +39,7 @@ public class Direccion {
      * @param provincia de la clase
      * @param isla de la clase
      */
-    public Direccion(String codigoPostal, String calle, String numero, String piso, Provincia provincia, Isla isla) {
+    public Direccion(int codigoPostal, String calle, int numero, int piso, Provincia provincia, Isla isla) {
         this.codigoPostal = codigoPostal;
         this.calle = calle;
         this.numero = numero;
@@ -48,11 +48,11 @@ public class Direccion {
         this.isla = isla;
     }
 
-    public String getCodigoPostal() {
+    public int getCodigoPostal() {
         return codigoPostal;
     }
 
-    public void setCodigoPostal(String codigoPostal) {
+    public void setCodigoPostal(int codigoPostal) {
         this.codigoPostal = codigoPostal;
     }
 
@@ -64,19 +64,19 @@ public class Direccion {
         this.calle = calle;
     }
 
-    public String getNumero() {
+    public int getNumero() {
         return numero;
     }
 
-    public void setNumero(String numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 
-    public String getPiso() {
+    public int getPiso() {
         return piso;
     }
 
-    public void setPiso(String piso) {
+    public void setPiso(int piso) {
         this.piso = piso;
     }
 
