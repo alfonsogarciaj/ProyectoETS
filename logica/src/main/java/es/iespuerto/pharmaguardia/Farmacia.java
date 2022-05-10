@@ -1,6 +1,7 @@
 package es.iespuerto.pharmaguardia;
 
 public class Farmacia {
+    private int codigo;
     private String nombre;
     private int telefono;
     private Direccion direccion;
@@ -13,17 +14,27 @@ public class Farmacia {
     }
 
     /**
-     * Constructor con cuatro parametross
-     * @param nombre de la farmacia
-     * @param telefono de la farmacia
-     * @param direccion de la farmacia
+     * Constructor con cinco parametross
+     * @param codigo codigo de la farmacia
+     * @param nombre nombre de la farmacia
+     * @param telefono telefono de la farmacia
+     * @param direccion direccion de la farmacia
      * @param guardia true si la farmacia está de guardia y false si no
      */
-    public Farmacia(String nombre, int telefono, Direccion direccion, boolean guardia) {
+    public Farmacia(int codigo, String nombre, int telefono, Direccion direccion, boolean guardia) {
+        this.codigo = codigo;
         this.nombre = nombre;
         this.telefono = telefono;
         this.direccion = direccion;
         this.guardia = guardia;
+    }
+
+    public int getCodigo(){
+        return codigo;
+    }
+
+    public void setCodigo(int codigo){
+        this.codigo = codigo;
     }
 
     public String getNombre() {
