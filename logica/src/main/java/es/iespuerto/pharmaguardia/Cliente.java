@@ -29,6 +29,7 @@ public class Cliente {
         this.farmaciaDeConfianza = farmaciaDeConfianza;
     }
 
+    /**
     public String getNombre() {
         return nombre;
     }
@@ -68,4 +69,5 @@ public class Cliente {
     public void setFarmaciaDeConfianza(Farmacia farmaciaDeConfianza) {
         this.farmaciaDeConfianza = farmaciaDeConfianza;
     }
+     **/
 }
