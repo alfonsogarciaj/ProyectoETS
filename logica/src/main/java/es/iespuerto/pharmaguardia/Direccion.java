@@ -9,6 +9,10 @@ public class Direccion {
     private Provincia provincia;
     private Isla isla;
 
+    public int getCodigoPostal() {
+        return codigoPostal;
+    }
+
     public enum Provincia {LAS_PALMAS_DE_GRAN_CANARIA, SANTA_CRUZ_DE_TENERIFE};
     public enum Isla{EL_HIERRO, FUERTEVENTURA, GRAN_CANARIA, LA_GOMERA, LANZAROTE, LA_PALMA, TENERIFE};
 

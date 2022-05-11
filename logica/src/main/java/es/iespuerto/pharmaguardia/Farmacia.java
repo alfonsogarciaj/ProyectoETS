@@ -29,10 +29,14 @@ public class Farmacia {
         this.guardia = guardia;
     }
 
-    public int getCodigo(){
-        return codigo;
+    public Direccion getDireccion() {
+        return direccion;
     }
 
+    public int getCodigo() {
+        return codigo;
+    }
+/**
     public void setCodigo(int codigo){
         this.codigo = codigo;
     }
@@ -53,9 +57,6 @@ public class Farmacia {
         this.telefono = telefono;
     }
 
-    public Direccion getDireccion() {
-        return direccion;
-    }
 
     public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
@@ -68,4 +69,5 @@ public class Farmacia {
     public void setGuardia(boolean guardia) {
         this.guardia = guardia;
     }
+ */
 }
