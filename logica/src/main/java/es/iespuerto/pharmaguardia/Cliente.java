@@ -41,44 +41,8 @@ public class Cliente {
         this.farmaciaDeConfianza = farmaciaDeConfianza;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getCorreoElectronico() {
-        return correoElectronico;
-    }
-
-    public void setCorreoElectronico(String correoElectronico) {
-        this.correoElectronico = correoElectronico;
-    }
-
-    public Direccion getDireccionActual() {
-        return direccionActual;
-    }
-
-    public void setDireccionActual(Direccion direccionActual) {
-        this.direccionActual = direccionActual;
-    }
-
-    public Farmacia getFarmaciaDeConfianza() {
-        return farmaciaDeConfianza;
-    }
-
-    public void setFarmaciaDeConfianza(Farmacia farmaciaDeConfianza) {
-        this.farmaciaDeConfianza = farmaciaDeConfianza;
+    private void setFarmaciaDeConfianza(Farmacia farmacia) {
+        this.farmaciaDeConfianza = farmacia;
     }
 
     /**
@@ -96,6 +60,8 @@ public class Cliente {
         }
         return respuesta;
     }
+
+
 
     /**
      * Metodo que elimina una farmacia de confianza
@@ -127,4 +93,5 @@ public class Cliente {
         }
         return respuesta;
     }
+
 }
