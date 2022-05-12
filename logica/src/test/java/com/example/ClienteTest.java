@@ -20,10 +20,19 @@ public class ClienteTest
     Direccion direccion = null;
     Farmacia farmacia = null;
 
+    Farmacia farmaciaDeConfianza = null;
+
     @BeforeEach
     public void BeforeEach(){
         if (cliente == null){
             cliente = new Cliente("nombre", 0006666 ,"nombre@gmail.com", direccion , farmacia);
+        }
+    }
+
+    @Test
+    public void ContructorConTresParametros(){
+        if (cliente == null){
+            cliente = new Cliente("nombre", 0006666 ,"nombre@gmail.com");
         }
     }
 
@@ -33,12 +42,13 @@ public class ClienteTest
         assertNotNull(cliente, "El cliente no es nulo");
     }
 
+    @Test
+    public void addFarmaciaDeConfianza(){
+        if (farmaciaDeConfianza != null){
+            Assertions.assertEquals(farmacia,farmaciaDeConfianza,"El parametro no es nulo");
+        }
+    }
 
-    
-    
-
-
-    
     /**
      * Rigorous Test :-)
      */

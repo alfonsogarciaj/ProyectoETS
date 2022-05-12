@@ -1,6 +1,7 @@
 package es.iespuerto.pharmaguardia;
 
 public class Farmacia {
+
     private int codigo;
     private String nombre;
     private int telefono;
