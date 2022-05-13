@@ -13,17 +13,6 @@ public class Cliente {
     public Cliente(){
     }
 
-    /**
-     * Constructor con tres parametros
-     * @param nombre nombre del cliente
-     * @param telefono telefono del cliente
-     * @param correoElectronico correo electronico del cliente
-     */
-    public Cliente(String nombre, int telefono, String correoElectronico){
-        this.nombre = nombre;
-        this.telefono = telefono;
-        this.correoElectronico = correoElectronico;
-    }
 
     /**
      * Constructor con cinco parametros

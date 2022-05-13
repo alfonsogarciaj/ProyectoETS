@@ -32,12 +32,6 @@ public class ClienteTest
         }
     }
 
-    @Test
-    public void ContructorConTresParametros(){
-        if (cliente == null){
-            cliente = new Cliente("nombre", 0006666 ,"nombre@gmail.com");
-        }
-    }
 
     @Test
     public void ClienteContructorDefecto(){
