@@ -47,7 +47,19 @@ public class ClienteTest
 
     @Test
     public void addFarmaciaDeConfianza(){
-        String mensaje = cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
+            String mensaje = cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
+            assertTrue(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
+    }
+
+    @Test
+    public void eliminarFarmaciaDeConfianza(){
+        String mensaje = cliente.eliminarFarmaciaDeConfianza();
+        assertFalse(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
+    }
+
+    @Test
+    public void modificaFarmaciaDeConfianza(){
+        String mensaje = cliente.modificarFarmaciaDeConfianza(farmaciaDeConfianza);
         assertTrue(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
     }
 
