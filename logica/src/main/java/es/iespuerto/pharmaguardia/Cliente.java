@@ -52,7 +52,7 @@ public class Cliente {
      */
     public String addFarmaciaDeConfianza(Farmacia farmacia){
         String respuesta = "";
-        if(farmaciaDeConfianza != null){
+        if(farmaciaDeConfianza == null){
             setFarmaciaDeConfianza(farmacia);
             respuesta = "Se ha añadido la farmacia de confianza correctamente";
         }else{

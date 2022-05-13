@@ -27,6 +27,9 @@ public class ClienteTest
         if (cliente == null){
             cliente = new Cliente("nombre", 0006666 ,"nombre@gmail.com", direccion , farmacia);
         }
+        if (farmaciaDeConfianza == null){
+            farmaciaDeConfianza = new Farmacia( 5555 , "FarmaciaEjemplo" , 666666666 , direccion , true);
+        }
     }
 
     @Test
@@ -44,9 +47,8 @@ public class ClienteTest
 
     @Test
     public void addFarmaciaDeConfianza(){
-        if (farmaciaDeConfianza != null){
-            Assertions.assertEquals(farmacia,farmaciaDeConfianza,"El parametro no es nulo");
-        }
+        String mensaje = cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
+        assertTrue(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
     }
 
     /**
