@@ -34,27 +34,48 @@ public class ClienteTest
 
 
     @Test
-    public void ClienteContructorDefecto(){
+    public void ClienteContructorDefectoTest(){
         cliente = new Cliente();
         assertNotNull(cliente, "El cliente no es nulo");
     }
 
     @Test
-    public void addFarmaciaDeConfianza(){
-            String mensaje = cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
-            assertTrue(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
-    }
-
-    @Test
-    public void eliminarFarmaciaDeConfianza(){
-        String mensaje = cliente.eliminarFarmaciaDeConfianza();
-        assertFalse(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
-    }
-
-    @Test
-    public void modificaFarmaciaDeConfianza(){
-        String mensaje = cliente.modificarFarmaciaDeConfianza(farmaciaDeConfianza);
+    public void addFarmaciaDeConfianzaTest(){
+        String mensaje = cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
         assertTrue(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
+    }
+
+    @Test
+    public void addFarmaciaDeConfianzaElseTest(){
+        cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
+        String mensaje = cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
+        assertTrue(mensaje.contains("asignada"), "El mensaje de respuesta no es el esperado");
+    }
+
+    @Test
+    public void eliminarFarmaciaDeConfianzaTest(){
+        cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
+        String mensaje = cliente.eliminarFarmaciaDeConfianza();
+        assertTrue(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
+    }
+
+    @Test
+    public void eliminarFarmaciaDeConfianzaElseTest(){
+        String mensaje = cliente.eliminarFarmaciaDeConfianza();
+        assertTrue(mensaje.contains("asignada"), "El mensaje de respuesta no es el esperado");
+    }
+
+    @Test
+    public void modificaFarmaciaDeConfianzaTest(){
+        cliente.addFarmaciaDeConfianza(farmaciaDeConfianza);
+        String mensaje = cliente.modificarFarmaciaDeConfianza(new Farmacia());
+        assertTrue(mensaje.contains("correctamente"), "El mensaje de respuesta no es el esperado");
+    }
+
+    @Test
+    public void modificaFarmaciaDeConfianzaElseTest(){
+        String mensaje = cliente.modificarFarmaciaDeConfianza(farmaciaDeConfianza);
+        assertTrue(mensaje.contains("asignada"), "El mensaje de respuesta no es el esperado");
     }
 
     /**

@@ -74,7 +74,7 @@ public class Cliente {
      */
     public String modificarFarmaciaDeConfianza(Farmacia farmacia){
         String respuesta = "";
-        if(farmaciaDeConfianza == null){
+        if(farmaciaDeConfianza != null){
             this.farmaciaDeConfianza = farmacia;
             respuesta = "Su farmacia de confianza se ha modificado correctamente";
         }else{
